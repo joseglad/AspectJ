@@ -1,0 +1,10 @@
+
+public aspect AspectTest {
+	pointcut toBeTraced():
+		call( public void print(String) ) ||
+		execution( public void print(String));
+	
+	before(): toBeTraced() {
+		System.out.println("..");
+	}
+}

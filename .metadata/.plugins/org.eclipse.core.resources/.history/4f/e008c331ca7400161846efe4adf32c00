@@ -1,0 +1,6 @@
+
+public aspect AspectTest {
+	pointcut toBeTraced():
+		call( public void print(String msg) ) ||
+		execution( public void print(String msg))
+}

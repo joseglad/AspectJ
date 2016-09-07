@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.ajdt.launching.AspectJApplication">
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="A"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/AspectJ/src/exercice1/A.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="exercice1.A"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="AspectJ"/>
 </launchConfiguration>

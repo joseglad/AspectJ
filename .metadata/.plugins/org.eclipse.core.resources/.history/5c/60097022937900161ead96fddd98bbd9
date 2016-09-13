@@ -1,0 +1,12 @@
+package singleton;
+
+import exercice2.etape1.*;
+
+public aspect ASingleton {
+	pointcut newClients():
+		call(public Clients.new(..));
+		
+	before(): newClients() {
+		System.out.println("ASingleton : appel de new Clients");
+	}
+}

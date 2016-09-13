@@ -14,6 +14,10 @@ public class Clients {
 		this.clients.add(c);
 	}
 	
+	public Client getClient(int index){
+		return this.clients.get(index);
+	}
+	
 	/*
 	public void delClient(Client c){
 		if( !c.hasOrder()) this.clients.remove(c);

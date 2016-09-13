@@ -14,12 +14,12 @@ public class AClientOrder {
 	@DeclareParents(
 			value="Client",
 			defaultImpl=ClientImpl.class)
-	private ClientItf client;
+	public ClientItf client;
 	
 	@DeclareParents(
 			value="Order",
 			defaultImpl=OrderImpl.class)
-	private OrderItf order;
+	public OrderItf order;
 	
 	
 	@Pointcut("call(public void Client.addOrder(Order))")

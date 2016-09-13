@@ -1,0 +1,10 @@
+package singleton;
+
+public aspect ASingleton {
+	pointcut newClients():
+		call(Clients.new(..))
+		
+	before(): newClients() {
+		System.out.println("Test");
+	}
+}

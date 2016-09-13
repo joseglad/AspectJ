@@ -8,6 +8,8 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Initialisation");
 		Clients clients = new Clients();
+		Clients clients2 = new Clients();
+		
 		Client jose = new Client("José", "Roubaix");
 		Client hedi = new Client("Hedi", "Lille");
 		clients.addClient(jose);
@@ -15,9 +17,13 @@ public class Main {
 		Order order1 = new Order(1, 2016);
 		Order order2 = new Order(2, 7);
 		
+		//Client joseClone = clients2.getClient(0);
+		System.out.println(clients.getClient(0));
+		System.out.println(clients2.getClient(0));
 		
-		System.out.println("Hedi prend la commande order1 :");
-		hedi.addOrder(order1);
+		
+		//System.out.println("Hedi prend la commande order1 :");
+		//hedi.addOrder(order1);
 		/*
 		order1.printOrder();
 		order2.printOrder();

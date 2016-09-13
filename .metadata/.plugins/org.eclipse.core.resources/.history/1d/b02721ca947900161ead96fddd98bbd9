@@ -1,0 +1,28 @@
+package singleton;
+
+import exercice2.etape1.*;
+
+public aspect ASingleton {
+	private Clients clients;
+	
+	pointcut newClients():
+		call(public Clients.new(..));
+	
+	pointcut execClients():
+		execution(public Clients.new(..));
+		
+	before(): newClients() {
+		System.out.println("ASingleton : appel de new Clients");
+	}
+	
+	Object around(): execClients() {
+		System.out.println("ASingleton : exécution de new Clients");
+		if(this.clients == null){
+			proceed();
+			System.out.println("ASingleton : création du singleton");
+		}
+		System.out.println("ASingleton : singleton déjà créé");
+		
+		return this.clients;
+	}
+}

@@ -15,8 +15,10 @@ public class Main {
 		Order order1 = new Order(1, 2016);
 		Order order2 = new Order(2, 7);
 		
+		
 		System.out.println("Hedi prend la commande order1 :");
 		hedi.addOrder(order1);
+		/*
 		order1.printOrder();
 		order2.printOrder();
 		System.out.println("José prend la commande order2 :");
@@ -26,6 +28,7 @@ public class Main {
 		
 		System.out.println("On essaye de supprimer Hedi :");
 		clients.delClient(hedi);
+		*/
 		
 
 	}

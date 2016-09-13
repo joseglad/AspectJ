@@ -14,7 +14,7 @@ public class Orders {
 		this.orders.add(o);
 	}
 	
-	public void detOrder(Order o) {
+	public void delOrder(Order o) {
 		this.orders.remove(o);
 	}
 	

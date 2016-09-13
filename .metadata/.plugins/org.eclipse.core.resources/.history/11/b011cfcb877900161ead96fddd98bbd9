@@ -1,0 +1,19 @@
+package exercice2.etape2;
+
+import exercice2.etape1.Client;
+
+public class OrderImpl implements OrderItf{
+
+	@Override
+	public void setClient(Client c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Client getClient() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

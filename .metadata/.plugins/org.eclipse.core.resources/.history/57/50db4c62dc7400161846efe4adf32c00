@@ -1,0 +1,11 @@
+package exercice2.etape1;
+
+public class Orders {
+	public void addOrder(Order o) {
+		
+	}
+	
+	public void detOrder(Order o) {
+		
+	}
+}

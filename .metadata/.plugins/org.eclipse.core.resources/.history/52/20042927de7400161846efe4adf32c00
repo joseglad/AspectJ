@@ -1,0 +1,21 @@
+package exercice2.etape1;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("Initialisation");
+		Clients clients = new Clients();
+		Client jose = new Client("José", "Roubaix");
+		Client hedi = new Client("Hedi", "Lille");
+		clients.addClient(jose);
+		clients.addClient(hedi);
+		Orders orders = new Orders();
+		Order order1 = new Order(1, 2016);
+		
+
+	}
+
+}

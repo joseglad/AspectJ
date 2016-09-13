@@ -1,0 +1,18 @@
+package exercice2.etape1;
+
+public class Order {
+	private int id;
+	private double amount;
+	
+	public void setClient(Client c){
+		
+	}
+	
+	public Client getClient() {
+		
+	}
+	
+	public void printOrder(){
+		
+	}
+}

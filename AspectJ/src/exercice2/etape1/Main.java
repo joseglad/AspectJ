@@ -24,21 +24,26 @@ public class Main {
 		
 		
 		System.out.println("Main: #Clients: Est-ce que les références sont les mêmes ?");
-		System.out.println("Main: "+clients);
-		System.out.println("Main: "+clients2);
+		System.out.println("Main: " + clients);
+		System.out.println("Main: " + clients2);
 		System.out.println("Main: #Clients: Est-ce que c'est le même objet ?");
-		System.out.println("Main: "+clients.getClient(0));
-		System.out.println("Main: "+clients2.getClient(0));
+		System.out.println("Main: " + clients.getClient(0));
+		System.out.println("Main: " + clients2.getClient(0));
 		
 		System.out.println("Main: #Orders: Est-ce que les références sont les mêmes ?");
-		System.out.println("Main: "+orders);
-		System.out.println("Main: "+orders2);
+		System.out.println("Main: " + orders);
+		System.out.println("Main: " + orders2);
 		System.out.println("Main: #Orders: Est-ce que c'est le même objet ?");
-		System.out.println("Main: "+orders.getOrders(0).getId());
-		System.out.println("Main: "+orders2.getOrders(0).getId());
+		System.out.println("Main: " + orders.getOrders(0).getId());
+		System.out.println("Main: " + orders2.getOrders(0).getId());
 		
-		//System.out.println("Hedi prend la commande order1 :");
-		//hedi.addOrder(order1);
+		System.out.println("Main: #Hedi prend la commande order1 :");
+		hedi.addOrder(orders.getOrders(0));
+		
+		System.out.println("Main: #Affichage de la commande order1 :");
+		orders.getOrders(0).printOrder(); 
+		System.out.println(" " + orders.getOrders(0).getClient());
+		
 		/*
 		order1.printOrder();
 		order2.printOrder();

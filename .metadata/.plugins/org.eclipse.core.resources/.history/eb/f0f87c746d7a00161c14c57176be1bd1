@@ -1,0 +1,8 @@
+package exercice2.etape2;
+
+public aspect AClientOrder {
+	public void addOrder(Order o){
+		//o.setClient(this);
+		this.orders.addOrder(o);
+	}
+}

@@ -3,6 +3,7 @@ package exercice2.etape1;
 public class Order {
 	private int id;
 	private double amount;
+	//private Client client;
 	
 	public Order(int id, double amount) {
 		this.id = id;

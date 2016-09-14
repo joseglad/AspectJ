@@ -42,7 +42,7 @@ public aspect AClientOrder {
 	}
 	
 	void around(Client clientToDelete) throws ClientHasOrderException: delClientPCConstraint(clientToDelete) {
-		if(clientToDelete.hasOrder()) {
+		if(clientToDelete.) {
 			throw new ClientHasOrderException();
 		}
 		proceed(clientToDelete);

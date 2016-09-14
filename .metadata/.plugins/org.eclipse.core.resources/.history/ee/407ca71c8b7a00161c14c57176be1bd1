@@ -3,6 +3,7 @@ package exercice2.etape1;
 public class Client {
 	private String name;
 	private String address;
+	//private Orders orders;
 	
 	public Client(String name, String address){
 		this.name = name;

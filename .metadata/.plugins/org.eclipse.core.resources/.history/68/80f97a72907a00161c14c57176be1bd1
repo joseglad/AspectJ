@@ -18,7 +18,7 @@ public class Clients {
 		return this.clients.get(index);
 	}
 	
-	public void delClient(Client c) throws ClientHasOrderException {
+	public void delClient(Client c){
 		this.clients.remove(c);
 	}
 }

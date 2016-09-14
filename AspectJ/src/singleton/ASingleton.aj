@@ -1,38 +1,33 @@
 package singleton;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import exercice2.etape1.*;
 
 public aspect ASingleton {
-	private Clients clients;
 	
-	pointcut newClients():
-		call(public Clients.new(..));
+	private Map<Class<?>, Object> singletons = new HashMap<Class<?>, Object>();
 	
-	pointcut execClients():
-		execution(public Clients.new(..));
+	pointcut newSingleton():
+		call(public Clients.new(..)) ||
+		call(public Orders.new(..));
+	
+	
+	Object around(): newSingleton() {
 		
-	before(): newClients() {
-		System.out.println("/*");
-		System.out.println("ASingleton : appel de new Clients");
-		System.out.println("*/");
-	}
-	
-	Clients around(): execClients() {
-		System.out.println("/*");
-		System.out.println("ASingleton : exécution de new Clients");
-		if(thisJoinPoint.getThis() == null){
-			//clients = (Clients) thisJoinPoint.getThis();
-			
-			System.out.println("ASingleton : création du singleton!");
-			System.out.println("*/");
-			Clients c = (Clients) proceed();
-			clients = c;
-			return c;
-			
+		System.out.println("ASingleton : exécution de new de Clients ou Orders");
+		
+		Class<?> singletonClass = thisJoinPoint.getSignature().getDeclaringType();
+		Object singletonObject = this.singletons.get(singletonClass);		
+		
+		if(singletonObject == null) {
+			singletonObject = proceed();
+			this.singletons.put(singletonClass, singletonObject);
 		}
 		
-		System.out.println("ASingleton : singleton déjà créé!");
-		System.out.println("*/");
-		return clients;
+		
+		return singletonObject;
+		
 	}
 }

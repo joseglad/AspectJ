@@ -6,21 +6,36 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println("Initialisation");
+		System.out.println("Main: Initialisation");
 		Clients clients = new Clients();
 		Clients clients2 = new Clients();
-		
 		Client jose = new Client("José", "Roubaix");
 		Client hedi = new Client("Hedi", "Lille");
-		clients.addClient(jose);
-		clients.addClient(hedi);
+		Orders orders = new Orders();
+		Orders orders2 = new Orders();
 		Order order1 = new Order(1, 2016);
 		Order order2 = new Order(2, 7);
 		
-		//Client joseClone = clients2.getClient(0);
-		System.out.println(clients.getClient(0));
-		System.out.println(clients2.getClient(0));
+		clients.addClient(jose);
+		clients.addClient(hedi);
+		orders.addOrder(order1);
+		orders.addOrder(order2);
 		
+		
+		
+		System.out.println("Main: #Clients: Est-ce que les références sont les mêmes ?");
+		System.out.println("Main: "+clients);
+		System.out.println("Main: "+clients2);
+		System.out.println("Main: #Clients: Est-ce que c'est le même objet ?");
+		System.out.println("Main: "+clients.getClient(0));
+		System.out.println("Main: "+clients2.getClient(0));
+		
+		System.out.println("Main: #Orders: Est-ce que les références sont les mêmes ?");
+		System.out.println("Main: "+orders);
+		System.out.println("Main: "+orders2);
+		System.out.println("Main: #Orders: Est-ce que c'est le même objet ?");
+		System.out.println("Main: "+orders.getOrders(0).getId());
+		System.out.println("Main: "+orders2.getOrders(0).getId());
 		
 		//System.out.println("Hedi prend la commande order1 :");
 		//hedi.addOrder(order1);

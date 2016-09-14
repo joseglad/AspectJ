@@ -21,4 +21,8 @@ public class Orders {
 	public int getNumberOfOrders(){
 		return this.orders.size();
 	}
+
+	public Order getOrders(int index) {
+		return this.orders.get(index);
+	}
 }

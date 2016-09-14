@@ -10,6 +10,14 @@ public class Order {
 		this.amount = amount;
 	}
 	
+	public int getId() {
+		return this.id;
+	}
+	
+	public double getAmount() {
+		return this.amount;
+	}
+	
 	/*
 	public void setClient(Client c){
 		this.client = c;

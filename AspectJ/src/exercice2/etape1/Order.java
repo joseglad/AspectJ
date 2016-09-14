@@ -3,22 +3,21 @@ package exercice2.etape1;
 public class Order {
 	private int id;
 	private double amount;
-	private Client client;
 	
 	public Order(int id, double amount) {
 		this.id = id;
 		this.amount = amount;
 	}
 	
-	public void setClient(Client c){
-		this.client = c;
+	public int getId() {
+		return this.id;
 	}
 	
-	public Client getClient() {
-		return this.client;
+	public double getAmount() {
+		return this.amount;
 	}
 	
 	public void printOrder(){
-		System.out.println("id : " + id + "; amount : " + amount + "; client : " + client);
+		System.out.print("id : " + id + "; amount : " + amount + ";");
 	}
 }

@@ -1,0 +1,12 @@
+package exercice2.etape2;
+
+public Interface OrderItf {
+	public void setClient(Client c){
+		this.client = c;
+	}
+	
+	public Client getClient() {
+		return this.client;
+	}
+
+}

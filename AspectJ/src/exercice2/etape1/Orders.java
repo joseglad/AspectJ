@@ -14,11 +14,15 @@ public class Orders {
 		this.orders.add(o);
 	}
 	
-	public void detOrder(Order o) {
+	public void delOrder(Order o) {
 		this.orders.remove(o);
 	}
 	
 	public int getNumberOfOrders(){
 		return this.orders.size();
+	}
+
+	public Order getOrders(int index) {
+		return this.orders.get(index);
 	}
 }

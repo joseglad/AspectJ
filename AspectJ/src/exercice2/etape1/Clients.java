@@ -14,9 +14,11 @@ public class Clients {
 		this.clients.add(c);
 	}
 	
-	public void delClient(Client c){
-		if( !c.hasOrder()) this.clients.remove(c);
-		else System.out.println("Attention, " + c + " a une ou plusieurs commandes, on ne peut donc pas le supprimer!");
+	public Client getClient(int index){
+		return this.clients.get(index);
 	}
-
+	
+	public void delClient(Client c) throws ClientHasOrderException {
+		this.clients.remove(c);
+	}
 }

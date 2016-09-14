@@ -1,8 +1,0 @@
-package exercice2.etape2;
-
-import org.aspectj.lang.annotation.Aspect;
-
-@Aspect
-public class AClientOrder {
-	
-}

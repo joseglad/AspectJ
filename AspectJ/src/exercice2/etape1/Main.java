@@ -44,18 +44,23 @@ public class Main {
 		orders.getOrders(0).printOrder(); 
 		System.out.println(" " + orders.getOrders(0).getClient());
 		
-		/*
-		order1.printOrder();
-		order2.printOrder();
-		System.out.println("José prend la commande order2 :");
-		jose.addOrder(order2);
-		order1.printOrder();
-		order2.printOrder();
 		
-		System.out.println("On essaye de supprimer Hedi :");
-		clients.delClient(hedi);
-		*/
+		System.out.println("Main: #On essaye de supprimer Hedi");
+		try {
+			clients.delClient(hedi);
+		} catch(ClientHasOrderException e) {
+			System.out.println("Main: L'exception ClientHasOrderException a été levée");
+		}
 		
+		
+		hedi.delOrder(orders.getOrders(0));
+		System.out.println("Main: #On supprime la dernière commande de Hedi");
+		try {
+			clients.delClient(hedi);
+			System.out.println("Main: La suppression de Hedi dans la liste de clients a été faite avec succès");
+		} catch(ClientHasOrderException e) {
+			System.out.println("Main: L'exception ClientHasOrderException a été levée");
+		}
 
 	}
 

@@ -16,7 +16,7 @@ public aspect ASingleton {
 	
 	Object around(): newSingleton() {
 		
-		System.out.println("ASingleton : exécution de new de Clients ou Orders");
+		//System.out.println("ASingleton : exécution de new de Clients ou Orders");
 		
 		Class<?> singletonClass = thisJoinPoint.getSignature().getDeclaringType();
 		Object singletonObject = this.singletons.get(singletonClass);		

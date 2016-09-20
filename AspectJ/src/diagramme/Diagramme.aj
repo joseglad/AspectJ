@@ -12,7 +12,9 @@ public aspect Diagramme {
 	//Faire un traceur de diagramme qui prend appuie sur le rang
 	private Map<Object, Integer> actors = new HashMap<Object, Integer>();
 	private int rank = -1;
+	private final String blanks	= "            ";
 	private final String dashes = "------------";
+	private final String arrow	= "----------->";
 	
 	//Attention on peut avoir le nom de la méthode via sa signature
 	pointcut news():
@@ -44,51 +46,24 @@ public aspect Diagramme {
 		if(!actors.containsKey(source)) {
 			rank++;
 			actors.put(source, rank);
-			System.out.println(" N est pas contenu");
+			//System.out.println(" N est pas contenu");
 		}
 		if(!actors.containsKey(target)) {
 			rank++;
 			actors.put(target, rank);
-			System.out.println(" N est pas contenu");
+			//System.out.println(" N est pas contenu");
 		}
 		int sourceRank = actors.get(source);
 		int targetRank = actors.get(target);
-		System.out.println(source + "(" + sourceRank +") " + target + "(" + targetRank +") ");
+		//System.out.println(source + "(" + sourceRank +") " + target + "(" + targetRank +") ");
 		
-		
-		switch(sourceRank)
-		{
-		case 0:
-			System.out.println("  |----new---->|             |             |             | ");
-			break;
-		case 1:
-			System.out.println("  |----neW---->|             |             |             | ");
-			break;
-		default:
-			;
+		for(int i = 0; i < sourceRank; i++) {
+			System.out.print("|" + this.blanks);
 		}
+		
+		for(int i = sourceRank + 1; i < targetRank; i++) {
+			System.out.print("|" + this.dashes);
+		}
+		System.out.println("|" + this.arrow + "|");
 	}
-	
-	/*
-	after(): addClient() {
-		System.out.println("  |-addClient->|             |             |             | ");
-	}
-	
-	after(): newOrders() {
-		System.out.println("  |------------|-----new---->|             |             | ");
-	}
-	
-	after(): addOrder() {
-		System.out.println("  |------------|--addOrder-->|             |             | ");
-	}
-	
-	after(): newClient() {
-		System.out.println("  |------------|-------------|-----new---->|             | ");
-	}
-	
-	after(): newOrder() {
-		System.out.println("  |------------|-------------|-------------|-----new---->| ");
-	}
-	
-	*/
 }

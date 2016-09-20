@@ -6,8 +6,8 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		System.out.println("Main: Initialisation");
 		System.out.println("Main        Clients        Orders        Client         Order");
-		//System.out.println("Main: Initialisation");
 		Clients clients = new Clients();
 		Clients clients2 = new Clients();
 		Client jose = new Client("José", "Roubaix");
@@ -22,8 +22,6 @@ public class Main {
 		orders.addOrder(order1);
 		orders.addOrder(order2);
 		
-		
-		/*
 		System.out.println("Main: #Clients: Est-ce que les références sont les mêmes ?");
 		System.out.println("Main: " + clients);
 		System.out.println("Main: " + clients2);
@@ -34,6 +32,8 @@ public class Main {
 		System.out.println("Main: #Orders: Est-ce que les références sont les mêmes ?");
 		System.out.println("Main: " + orders);
 		System.out.println("Main: " + orders2);
+		
+		/*
 		System.out.println("Main: #Orders: Est-ce que c'est le même objet ?");
 		System.out.println("Main: " + orders.getOrders(0).getId());
 		System.out.println("Main: " + orders2.getOrders(0).getId());

@@ -1,0 +1,30 @@
+package singleton;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+
+public aspect ASingleton {
+	
+	private Map<Class<?>, Object> singletons = new HashMap<Class<?>, Object>();
+	
+	pointcut newSingleton():
+		call(public *.new(..));
+	
+	
+	Object around(): newSingleton() {
+		
+		Class<?> singletonClass = thisJoinPoint.getSignature().getDeclaringType();
+		Object singletonObject = this.singletons.get(singletonClass);		
+		
+		if(new LinkedList(singletonClass.getClasses()).contains(Singleton.class))
+		if(singletonObject == null) {
+			singletonObject = proceed();
+			this.singletons.put(singletonClass, singletonObject);
+		}
+		
+		
+		return singletonObject;
+		
+	}
+}

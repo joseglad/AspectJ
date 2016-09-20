@@ -10,7 +10,7 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Diagramme d'échange de messages\n");
 		System.out.println("Main        Clients        Orders        Client         Order");
-		//System.out.println("Main: Initialisation");
+		System.out.println("Main: Initialisation");
 		Clients clients = new Clients();
 		Clients clients2 = new Clients();
 		Client jose = new Client("José", "Roubaix");

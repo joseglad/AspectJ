@@ -33,35 +33,33 @@ public class Main {
 		System.out.println("Main: " + orders);
 		System.out.println("Main: " + orders2);
 		
-		/*
 		System.out.println("Main: #Orders: Est-ce que c'est le même objet ?");
 		System.out.println("Main: " + orders.getOrders(0).getId());
 		System.out.println("Main: " + orders2.getOrders(0).getId());
-		*/
 		
-		//System.out.println("Main: #Hedi prend la commande order1 :");
+		System.out.println("Main: #Hedi prend la commande order1 :");
 		hedi.addOrder(orders.getOrders(0));
 		
-		//System.out.println("Main: #Affichage de la commande order1 :");
-		//orders.getOrders(0).printOrder(); 
-		//System.out.println(" " + orders.getOrders(0).getClient());
+		System.out.println("Main: #Affichage de la commande order1 :");
+		orders.getOrders(0).printOrder(); 
+		System.out.println(" " + orders.getOrders(0).getClient());
 		
 		
-		//System.out.println("Main: #On essaye de supprimer Hedi");
+		System.out.println("Main: #On essaye de supprimer Hedi");
 		try {
 			clients.delClient(hedi);
 		} catch(ClientHasOrderException e) {
-			//System.out.println("Main: L'exception ClientHasOrderException a été levée");
+			System.out.println("Main: L'exception ClientHasOrderException a été levée");
 		}
 		
 		
 		hedi.delOrder(orders.getOrders(0));
-		//System.out.println("Main: #On supprime la dernière commande de Hedi");
+		System.out.println("Main: #On supprime la dernière commande de Hedi");
 		try {
 			clients.delClient(hedi);
-			//System.out.println("Main: La suppression de Hedi dans la liste de clients a été faite avec succès");
+			System.out.println("Main: La suppression de Hedi dans la liste de clients a été faite avec succès");
 		} catch(ClientHasOrderException e) {
-			//System.out.println("Main: L'exception ClientHasOrderException a été levée");
+			System.out.println("Main: L'exception ClientHasOrderException a été levée");
 		}
 		
 		

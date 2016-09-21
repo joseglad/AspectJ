@@ -23,4 +23,8 @@ public class Clients implements Singleton {
 	public void delClient(Client c) throws ClientHasOrderException {
 		this.clients.remove(c);
 	}
+	
+	public String toString(){
+		return "Clients";
+	}
 }

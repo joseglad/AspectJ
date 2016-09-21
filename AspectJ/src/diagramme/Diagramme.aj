@@ -15,6 +15,7 @@ public aspect Diagramme {
 	private final String blanks	= "            ";
 	private final String dashes = "------------";
 	private final String arrow	= "----------->";
+	private String names 		= "      ";
 	
 	//Attention on peut avoir le nom de la méthode via sa signature
 	pointcut news():
@@ -46,17 +47,34 @@ public aspect Diagramme {
 		if(!actors.containsKey(source)) {
 			rank++;
 			actors.put(source, rank);
+			if(source == null) {
+				this.names += "Main ";
+			} else {
+				this.names += source.toString();
+			}
+			for(int i = 0; i < this.blanks.length() / 2; i++) {
+				this.names += " ";
+			}
 			//System.out.println(" N est pas contenu");
 		}
 		if(!actors.containsKey(target)) {
 			rank++;
 			actors.put(target, rank);
+			if(target == null) {
+				this.names += "Main ";
+			} else {
+				this.names += target.toString() + " ";
+			}
+			for(int i = 0; i < this.blanks.length() / 2; i++) {
+				this.names += " ";
+			}
 			//System.out.println(" N est pas contenu");
 		}
 		int sourceRank = actors.get(source);
 		int targetRank = actors.get(target);
 		//System.out.println(source + "(" + sourceRank +") " + target + "(" + targetRank +") ");
 		
+		System.out.print(this.blanks);
 		for(int i = 0; i < sourceRank; i++) {
 			System.out.print("|" + this.blanks);
 		}
@@ -65,5 +83,6 @@ public aspect Diagramme {
 			System.out.print("|" + this.dashes);
 		}
 		System.out.println("|" + this.arrow + "|");
+		System.out.println(this.names);
 	}
 }

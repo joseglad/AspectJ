@@ -27,4 +27,8 @@ public class Orders implements Singleton{
 	public Order getOrders(int index) {
 		return this.orders.get(index);
 	}
+	
+	public String toString(){
+		return "Orders";
+	}
 }

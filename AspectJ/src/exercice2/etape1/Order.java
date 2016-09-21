@@ -20,4 +20,8 @@ public class Order {
 	public void printOrder(){
 		System.out.print("id : " + id + "; amount : " + amount + ";");
 	}
+	
+	public String toString(){
+		return "Order" + this.id;
+	}
 }

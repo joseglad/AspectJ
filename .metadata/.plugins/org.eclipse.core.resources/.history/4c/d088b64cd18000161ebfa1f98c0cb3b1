@@ -65,12 +65,12 @@ public aspect Diagram {
 			callWay += " ";
 		}
 		for(int i = 0; i < sourceRank; i++) {
-			callWay += "|" + this.blanks;
+			callWay 	+= "|" + this.blanks;
 		}
 		returnWay = callWay;
 		returnWay += "|" + this.leftArrow + "|";
 		for(int i = sourceRank + 1; i < targetRank; i++) {
-			callWay += "|" + this.dashes;
+			callWay 	+= "|" + this.dashes;
 		}
 		
 		for(int i = sourceRank + 2; i <= targetRank; i++) {

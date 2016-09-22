@@ -9,8 +9,8 @@ public aspect Diagram {
 	//Garder la Source et la Cible en mémoire
 	//un Integer pour connaitre la distance entre les != objets
 	//Faire un traceur de diagramme qui prend appuie sur le rang
-	private Map<Object, Integer> actors		= new HashMap<Object, Integer>();
-	private int rank						= -1;
+	private Map<Object, Integer> actors 	= new HashMap<Object, Integer>();
+	private int rank 						= -1;
 	private final String blanks				= "            ";
 	private final String dashes				= "------------";
 	private final String rightArrow			= "----------->"; //Plus aura le nom de la méthode
@@ -65,12 +65,12 @@ public aspect Diagram {
 			callWay += " ";
 		}
 		for(int i = 0; i < sourceRank; i++) {
-			callWay += "|" + this.blanks;
+			callWay 	+= "|" + this.blanks;
 		}
 		returnWay = callWay;
 		returnWay += "|" + this.leftArrow + "|";
 		for(int i = sourceRank + 1; i < targetRank; i++) {
-			callWay += "|" + this.dashes;
+			callWay 	+= "|" + this.dashes;
 		}
 		
 		for(int i = sourceRank + 2; i <= targetRank; i++) {

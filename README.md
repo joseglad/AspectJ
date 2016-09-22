@@ -16,18 +16,35 @@ Par la suite, à chaque point de joinction intercepté, j'affiche:
 
 Je crée les différentes classes Client, Clients, Order et Orders sans aspect.
 
-Je lance une simulation de l'application pour tester son fonctionnement et les différentes contraintes des classes.
+Je lance une simulation de l'application pour tester son fonctionnement et les différentes contraintes entre classes.
+
+## III - Refactorisation de l'application à l'aide d'un aspect
+
+Un aspect permet la refactorisation du code d'une application.
+
+La refactorisation aide à la réutilisation de code et à la suppression de dépendances.
+
+Dans l'application précédente, la méthode d'ajout d'une commande à un client créait une dépendance.
+Une autre dépendance est la méthode de suppression de client ayant un ou plusieurs commandes (besoin d'une liste de commandes dans clients).
+
+Ces deux contraintes rendent utiles la refactorisation de code.
 
 
 ## IV - Design pattern Singleton
 
 Nous allons implémenter ce design pattern Singleton grâce à AspectJ.
+Pour cela, il faut tout d'abord que la classe qui souhaite avoir les caractéristiques d'un Singleton implémente notre interface Singleton. Cette interface nous servira de filtre.
+
+
 
 
 
 
 
 ## V - Diagramme d'échange de messages
+
+
+## VI - Exécution de l'application
 
 
 

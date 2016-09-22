@@ -3,6 +3,7 @@ package diagramme;
 import java.util.HashMap;
 import java.util.Map;
 
+import exercice2.etape1.*;
 
 public aspect Diagramme {
 	//Pour garder les objets en mémoire et savoir qui appelle qui
@@ -14,46 +15,72 @@ public aspect Diagramme {
 	private final String blanks	= "            ";
 	private final String dashes	= "------------";
 	private final String arrow	= "----------->";
-	private final int size = 14;
+	private final int size = 12;
 	private String names		= "";
-	
-	private void checkAddition(Object object) {
-		if(!this.actors.containsKey(object)) {
-			String name = "";
-			this.rank++;
-			this.actors.put(object, rank);
-			if(object == null) {
-				name = "Main";
-			} else {
-				name = object.toString();
-			}
-		
-			while(name.length() < this.size) {
-				if((name.length() % 2) == 1) {
-					name += " ";
-				} else {
-					name = " " + name + " ";
-				}
-			}
-			this.names += name;
-		}
-	}
 	
 	//Attention on peut avoir le nom de la méthode via sa signature
 	pointcut news():
 		call(public * *.set*(..)) ||
 		call(public * *.add*(..));
 	
+	/*
+	pointcut addClient():
+		call(public void Clients.addClient(..));
+	
+	pointcut newOrders():
+		call(public Orders.new(..));
+	
+	pointcut addOrder():
+		call(public void Orders.addOrder(..));
+	
+	pointcut newClient():
+		call(public Client.new(..));
+	
+	pointcut newOrder():
+		call(public Order.new(..));
+		
+	*/
+	
 	
 	before(): news() {
 		Object source = thisJoinPoint.getThis();
 		Object target = thisJoinPoint.getTarget();
-		
-		this.checkAddition(source);
-		this.checkAddition(target);
-		
+		if(!actors.containsKey(source)) {
+			String name = "";
+			rank++;
+			actors.put(source, rank);
+			if(source == null) {
+				name += "Main";
+			} else {
+				name += source.toString();
+			}
+			/*
+			for(int i = 0; i < this.blanks.length() / 2; i++) {
+				this.names += " ";
+			}
+			*/
+			while(name.length() < this.size) {
+				
+			}
+			this.names += name;
+			//System.out.println(" N est pas contenu");
+		}
+		if(!actors.containsKey(target)) {
+			rank++;
+			actors.put(target, rank);
+			if(target == null) {
+				this.names += "Main ";
+			} else {
+				this.names += target.toString() + " ";
+			}
+			for(int i = 0; i < this.blanks.length() / 2; i++) {
+				this.names += " ";
+			}
+			//System.out.println(" N est pas contenu");
+		}
 		int sourceRank = actors.get(source);
 		int targetRank = actors.get(target);
+		//System.out.println(source + "(" + sourceRank +") " + target + "(" + targetRank +") ");
 		
 		System.out.print("      ");
 		for(int i = 0; i < sourceRank; i++) {

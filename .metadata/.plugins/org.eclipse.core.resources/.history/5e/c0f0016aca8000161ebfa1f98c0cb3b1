@@ -25,9 +25,13 @@ public aspect Diagramme {
 			if(object == null) {
 				name = "Main";
 			} else {
-				name = object.toString();
+				name = source.toString();
 			}
-		
+			/*
+			for(int i = 0; i < this.blanks.length() / 2; i++) {
+				this.names += " ";
+			}
+			*/
 			while(name.length() < this.size) {
 				if((name.length() % 2) == 1) {
 					name += " ";
@@ -36,6 +40,7 @@ public aspect Diagramme {
 				}
 			}
 			this.names += name;
+			//System.out.println(" N est pas contenu");
 		}
 	}
 	
@@ -48,12 +53,57 @@ public aspect Diagramme {
 	before(): news() {
 		Object source = thisJoinPoint.getThis();
 		Object target = thisJoinPoint.getTarget();
-		
-		this.checkAddition(source);
-		this.checkAddition(target);
-		
+		if(!actors.containsKey(source)) {
+			String name = "";
+			rank++;
+			actors.put(source, rank);
+			if(source == null) {
+				name = "Main";
+			} else {
+				name = source.toString();
+			}
+			/*
+			for(int i = 0; i < this.blanks.length() / 2; i++) {
+				this.names += " ";
+			}
+			*/
+			while(name.length() < this.size) {
+				if((name.length() % 2) == 1) {
+					name += " ";
+				} else {
+					name = " " + name + " ";
+				}
+			}
+			this.names += name;
+			//System.out.println(" N est pas contenu");
+		}
+		if(!actors.containsKey(target)) {
+			String name = "";
+			rank++;
+			actors.put(target, rank);
+			if(target == null) {
+				name = "Main";
+			} else {
+				name = target.toString();
+			}
+			/*
+			for(int i = 0; i < this.blanks.length() / 2; i++) {
+				this.names += " ";
+			}
+			*/
+			while(name.length() < this.size) {
+				if((name.length() % 2) == 1) {
+					name += " ";
+				} else {
+					name = " " + name + " ";
+				}
+			}
+			this.names += name;
+			//System.out.println(" N est pas contenu");
+		}
 		int sourceRank = actors.get(source);
 		int targetRank = actors.get(target);
+		//System.out.println(source + "(" + sourceRank +") " + target + "(" + targetRank +") ");
 		
 		System.out.print("      ");
 		for(int i = 0; i < sourceRank; i++) {

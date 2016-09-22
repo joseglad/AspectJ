@@ -54,6 +54,7 @@ public aspect Diagramme {
 		
 		int sourceRank = actors.get(source);
 		int targetRank = actors.get(target);
+		//System.out.println(source + "(" + sourceRank +") " + target + "(" + targetRank +") ");
 		
 		System.out.print("      ");
 		for(int i = 0; i < sourceRank; i++) {

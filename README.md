@@ -3,6 +3,7 @@
 ## Exercice 1 : Design pattern Singleton
 
 Ce design pattern Singleton est implémenté grâce à AspectJ.
+
 AspectJ est une extension orientée aspect pour le langage de programmation Java (Wikipédia).
 
 

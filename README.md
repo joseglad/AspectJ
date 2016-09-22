@@ -6,8 +6,9 @@ AspectJ est une extension orientée aspect pour le langage de programmation Java
 
 La première approche avec AspectJ consiste à intercepter l'appel et l'exécution d'une méthode d'affichage de message.
 
-Et par la suite à chaque point de joinction intercepté, nous affichons :
-
+Par la suite, à chaque point de joinction intercepté, nous affichons:
+-la source
+-la cible
 
 
 ## IV - Design pattern Singleton

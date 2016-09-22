@@ -7788,3 +7788,9 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.jdt.core 4 969 2016-09-22 15:16:50.881
 !MESSAGE Main.java [in diagramme [in src [in AspectJ]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-09-22 16:04:47.395
+!MESSAGE Diagram.aj [in diagramme [in src [in AspectJ]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-09-22 16:04:47.413
+!MESSAGE Diagram.aj [in diagramme [in src [in AspectJ]]] does not exist

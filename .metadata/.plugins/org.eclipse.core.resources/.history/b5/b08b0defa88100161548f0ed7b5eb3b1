@@ -58,8 +58,7 @@ public aspect Diagram {
 		//si je mets un en plus, j'aurais un StackOverflowError
 		//call(public * *.get*(..)) ||
 		//call(public * *.del*(..)) || 
-		call(public * Client.*(*)) ||
-		call(public * Clients.del*(*)) ||
+		call(public void Client.delOrder(Order)) ||
 		call(public * *.set*(..)) ||
 		call(public * *.add*(..));
 	

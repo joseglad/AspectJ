@@ -59,7 +59,7 @@ public aspect Diagram {
 		//call(public * *.get*(..)) ||
 		//call(public * *.del*(..)) || 
 		call(public * Client.*(*)) ||
-		call(public * Clients.del*(*)) ||
+		call(public * Clients.*(*)) ||
 		call(public * *.set*(..)) ||
 		call(public * *.add*(..));
 	

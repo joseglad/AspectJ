@@ -6,7 +6,6 @@ import java.util.Map;
 import org.aspectj.lang.reflect.MethodSignature;
 
 import exercice2.etape1.Client;
-import exercice2.etape1.Order;
 
 
 public aspect Diagram {
@@ -57,9 +56,8 @@ public aspect Diagram {
 	pointcut trace():
 		//si je mets un en plus, j'aurais un StackOverflowError
 		//call(public * *.get*(..)) ||
-		//call(public * *.del*(..)) || 
-		call(public * Client.*(*)) ||
-		call(public * Clients.del*(*)) ||
+		//call(public * *.del*(..)) ||
+		call(public void Order.setClient(Client)) ||
 		call(public * *.set*(..)) ||
 		call(public * *.add*(..));
 	

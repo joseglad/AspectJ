@@ -48,4 +48,4 @@ Deux exécutables.
 
 Depuis une console, se placer à la racine du projet et lancer la commande:
 > ./diagram
-- 
+

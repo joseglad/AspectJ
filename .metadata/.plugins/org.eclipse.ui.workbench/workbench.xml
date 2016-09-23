@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="37" version="2.0">
+<workbench progressCount="27" version="2.0">
 <workbenchAdvisor/>
 <window height="1024" maximized="true" width="1024" x="896" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -15,7 +15,7 @@
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="116" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -35,44 +35,29 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/m2iagl/pansa/workspace/AspectJ/src/exercice2/etape1/Main.java" title="Main.java" tooltip="AspectJ/src/exercice2/etape1/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice2/etape1/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1573" selectionTopPixel="281"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiagramMain.java" partName="DiagramMain.java" path="/home/m2iagl/pansa/Documents/IAGL/IFI/AspectJ/AspectJ/src/diagramme/DiagramMain.java" title="DiagramMain.java" tooltip="AspectJ/src/diagramme/DiagramMain.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/diagramme/DiagramMain.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1131" selectionTopPixel="39"/>
 </editor>
-<editor id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="ASingleton.aj" partName="ASingleton.aj" path="/home/m2iagl/pansa/workspace/AspectJ/src/singleton/ASingleton.aj" title="ASingleton.aj" tooltip="AspectJ/src/singleton/ASingleton.aj" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/singleton/ASingleton.aj"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="437" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="Diagram.aj" partName="Diagram.aj" path="/home/m2iagl/pansa/Documents/IAGL/IFI/AspectJ/AspectJ/src/diagramme/Diagram.aj" title="Diagram.aj" tooltip="AspectJ/src/diagramme/Diagram.aj" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/diagramme/Diagram.aj"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1327" selectionTopPixel="648"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Order.java" partName="Order.java" path="/home/m2iagl/pansa/workspace/AspectJ/src/exercice2/etape1/Order.java" title="Order.java" tooltip="AspectJ/src/exercice2/etape1/Order.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice2/etape1/Order.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="370" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="AClientOrder.aj" partName="AClientOrder.aj" path="/home/m2iagl/pansa/workspace/AspectJ/src/exercice2/etape2/AClientOrder.aj" title="AClientOrder.aj" tooltip="AspectJ/src/exercice2/etape2/AClientOrder.aj" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice2/etape2/AClientOrder.aj"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="975" selectionTopPixel="56"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Orders.java" partName="Orders.java" path="/home/m2iagl/pansa/workspace/AspectJ/src/exercice2/etape1/Orders.java" title="Orders.java" tooltip="AspectJ/src/exercice2/etape1/Orders.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice2/etape1/Orders.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="32" selectionOffset="159" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Clients.java" partName="Clients.java" path="/home/m2iagl/pansa/workspace/AspectJ/src/exercice2/etape1/Clients.java" title="Clients.java" tooltip="AspectJ/src/exercice2/etape1/Clients.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice2/etape1/Clients.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="433" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientHasOrderException.java" partName="ClientHasOrderException.java" path="/home/m2iagl/pansa/workspace/AspectJ/src/exercice2/etape1/ClientHasOrderException.java" title="ClientHasOrderException.java" tooltip="AspectJ/src/exercice2/etape1/ClientHasOrderException.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice2/etape1/ClientHasOrderException.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="89" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/m2iagl/pansa/workspace/AspectJ/src/diagramme/Main.java" title="Main.java" tooltip="AspectJ/src/diagramme/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/diagramme/Main.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="/home/m2iagl/pansa/Documents/IAGL/IFI/AspectJ/AspectJ/src/exercice2/etape1/Client.java" title="Client.java" tooltip="AspectJ/src/exercice2/etape1/Client.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice2/etape1/Client.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Clients.java" partName="Clients.java" path="/home/m2iagl/pansa/Documents/IAGL/IFI/AspectJ/AspectJ/src/exercice2/etape1/Clients.java" title="Clients.java" tooltip="AspectJ/src/exercice2/etape1/Clients.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice2/etape1/Clients.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="ATrace.aj" partName="ATrace.aj" path="/home/m2iagl/pansa/Documents/IAGL/IFI/AspectJ/AspectJ/src/exercice1/ATrace.aj" title="ATrace.aj" tooltip="AspectJ/src/exercice1/ATrace.aj" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AspectJ/src/exercice1/ATrace.aj"/>
+<editorState selectionHorizontalPixel="0" selectionLength="72" selectionOffset="425" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -118,7 +103,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (8 items)"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (7 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="858" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="1177"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -151,7 +138,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -331,7 +318,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@4cd90c36" ratio="0.5488722" ratioLeft="511" ratioRight="420" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4cd90c36" ratio="0.556391" ratioLeft="518" ratioRight="413" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -352,166 +339,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AspectJ/src/exercice2/etape1/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AspectJ/src/exercice2/etape1/Orders.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AspectJ/src/exercice2/etape1/Order.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AspectJ/src/diagramme/DiagramMain.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" path="/AspectJ/src/diagramme/Diagram.aj"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AspectJ/src/exercice2/etape1/Client.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" path="/AspectJ/src/exercice2/etape2/AClientOrder.aj"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" path="/AspectJ/src/exercice1/ATrace.aj"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" path="/AspectJ/src/singleton/ASingleton.aj"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AspectJ/src/exercice2/etape1/Clients.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AspectJ/src/exercice2/etape1/ClientHasOrderException.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AspectJ/src/diagramme/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" path="/AspectJ/src/exercice1/ATrace.aj"/>
 </editors>
-<item historyLabel="AClientOrder.aj" index="4">
-<position/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="1559" y="0"/>
-</item>
-<item historyLabel="ATrace.aj" index="5">
-<position info="not_deleted" x="760" y="25"/>
-</item>
-<item historyLabel="Orders.java" index="1">
-<position info="not_deleted" x="159" y="32"/>
-</item>
-<item historyLabel="ASingleton.aj" index="6">
-<position info="not_deleted" x="437" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="265" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="1559" y="0"/>
-</item>
-<item historyLabel="Orders.java" index="1">
-<position info="not_deleted" x="159" y="32"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="265" y="0"/>
-</item>
-<item historyLabel="ATrace.aj" index="5">
-<position info="not_deleted" x="760" y="25"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="688" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="1573" y="0"/>
-</item>
-<item historyLabel="Client.java" index="3">
-<position/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="688" y="0"/>
-</item>
-<item historyLabel="Client.java" index="3">
-<position/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position/>
-</item>
-<item historyLabel="Client.java" index="3">
-<position/>
-</item>
-<item historyLabel="Order.java" index="2">
-<position info="not_deleted" x="270" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position/>
-</item>
-<item historyLabel="Client.java" index="3">
-<position info="not_deleted" x="95" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position/>
-</item>
-<item historyLabel="Order.java" index="2">
-<position info="not_deleted" x="270" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position/>
-</item>
-<item historyLabel="Order.java" index="2">
-<position info="not_deleted" x="370" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="343" y="93"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="688" y="0"/>
-</item>
-<item historyLabel="ATrace.aj" index="5">
-<position info="not_deleted" x="760" y="25"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="688" y="0"/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="406" y="0"/>
-</item>
-<item historyLabel="ClientHasOrderException.java" index="8">
-<position info="not_deleted" x="89" y="0"/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="406" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="688" y="0"/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="406" y="0"/>
-</item>
-<item historyLabel="ATrace.aj" index="5">
-<position info="not_deleted" x="788" y="0"/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="406" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="688" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="658" y="0"/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="343" y="31"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="658" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="688" y="0"/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="382" y="23"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="433" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-<item historyLabel="Clients.java" index="7">
-<position info="not_deleted" x="433" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-<item historyLabel="AClientOrder.aj" index="4">
-<position/>
-</item>
-<item active="true" historyLabel="Main.java" index="9">
+<item historyLabel="Client.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Clients.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1532" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1532" y="0"/>
+</item>
+<item historyLabel="Client.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Clients.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Client.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1513" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Clients.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Client.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1480" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1480" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1475" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="632" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position/>
+</item>
+<item historyLabel="ATrace.aj" index="4">
+<position info="not_deleted" x="425" y="72"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1297" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1283" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="1283" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="2601" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="2555" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="2322" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="579" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Clients.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ATrace.aj" index="4">
+<position info="not_deleted" x="425" y="72"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="1131" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="579" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="1131" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="579" y="0"/>
+</item>
+<item historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="2322" y="0"/>
+</item>
+<item historyLabel="DiagramMain.java" index="0">
+<position info="not_deleted" x="1131" y="0"/>
+</item>
+<item active="true" historyLabel="Diagram.aj" index="1">
+<position info="not_deleted" x="2322" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -519,9 +501,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -533,29 +512,38 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="ATrace.aj" tooltip="AspectJ/src/exercice1/ATrace.aj">
+<persistable path="/AspectJ/src/exercice1/ATrace.aj"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Clients.java" tooltip="AspectJ/src/exercice2/etape1/Clients.java">
+<persistable path="/AspectJ/src/exercice2/etape1/Clients.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" tooltip="AspectJ/src/exercice2/etape1/Client.java">
+<persistable path="/AspectJ/src/exercice2/etape1/Client.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="Diagram.aj" tooltip="AspectJ/src/diagramme/Diagram.aj">
+<persistable path="/AspectJ/src/diagramme/Diagram.aj"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiagramMain.java" tooltip="AspectJ/src/diagramme/DiagramMain.java">
+<persistable path="/AspectJ/src/diagramme/DiagramMain.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="Diagramme.aj" tooltip="AspectJ/src/diagramme/Diagramme.aj">
+<persistable path="/AspectJ/src/diagramme/Diagramme.aj"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="AspectJ/src/diagramme/Main.java">
 <persistable path="/AspectJ/src/diagramme/Main.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientHasOrderException.java" tooltip="AspectJ/src/exercice2/etape1/ClientHasOrderException.java">
 <persistable path="/AspectJ/src/exercice2/etape1/ClientHasOrderException.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Clients.java" tooltip="AspectJ/src/exercice2/etape1/Clients.java">
-<persistable path="/AspectJ/src/exercice2/etape1/Clients.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Orders.java" tooltip="AspectJ/src/exercice2/etape1/Orders.java">
 <persistable path="/AspectJ/src/exercice2/etape1/Orders.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="ATrace.aj" tooltip="AspectJ/src/exercice1/ATrace.aj">
-<persistable path="/AspectJ/src/exercice1/ATrace.aj"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor" name="AClientOrder.aj" tooltip="AspectJ/src/exercice2/etape2/AClientOrder.aj">
 <persistable path="/AspectJ/src/exercice2/etape2/AClientOrder.aj"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AClientOrder.java" tooltip="AspectJ/src/exercice2/etape2/AClientOrder.java">
 <persistable path="/AspectJ/src/exercice2/etape2/AClientOrder.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" tooltip="AspectJ/src/exercice2/etape1/Client.java">
-<persistable path="/AspectJ/src/exercice2/etape1/Client.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Order.java" tooltip="AspectJ/src/exercice2/etape1/Order.java">
 <persistable path="/AspectJ/src/exercice2/etape1/Order.java"/>
@@ -568,15 +556,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="A.java" tooltip="AspectJ/src/exercice1/A.java">
 <persistable path="/AspectJ/src/exercice1/A.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientItf.java" tooltip="AspectJ/src/exercice2/etape2/ClientItf.java">
-<persistable path="/AspectJ/src/exercice2/etape2/ClientItf.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientImpl.java" tooltip="AspectJ/src/exercice2/etape2/ClientImpl.java">
-<persistable path="/AspectJ/src/exercice2/etape2/ClientImpl.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OrderItf.java" tooltip="AspectJ/src/exercice2/etape2/OrderItf.java">
-<persistable path="/AspectJ/src/exercice2/etape2/OrderItf.java"/>
 </file>
 </mruList>
 </workbench>

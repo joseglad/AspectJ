@@ -1,8 +1,0 @@
-package exercice2.etape2;
-
-public interface OrderItf {
-	public void setClient(Client c);
-	
-	public Client getClient();
-
-}

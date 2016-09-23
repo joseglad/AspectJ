@@ -59,7 +59,7 @@ public aspect Diagram {
 		call(public * exercice2.etape1.*.add*(..)) ||
 		call(public * exercice2.etape1.*.get*(..));
 		*/
-		call(public * exercice2.etape1.*.*(..));
+		call(public * exercice2.etape1.*.get*(..));
 	
 	
 	Object around(): trace() {

@@ -52,14 +52,20 @@ public aspect Diagram {
 	
 	//Attention on peut avoir le nom de la méthode via sa signature
 	pointcut trace():
-		/*
+		//si je mets un en plus, j'aurais un StackOverflowError
+		//call(public * *.get*(..)) ||
+		//call(public * *.del*(..)) || 
+		//call(public * Client.*(..)) ||
+		//call(public * Clients.del*(..)) ||
 		call(public * exercice2.etape1.*.has*(..)) ||
 		call(public * exercice2.etape1.*.del*(..)) ||
 		call(public * exercice2.etape1.*.set*(..)) ||
 		call(public * exercice2.etape1.*.add*(..)) ||
 		call(public * exercice2.etape1.*.get*(..));
-		*/
-		call(public * exercice2.etape1.*.*(..));
+		//call(public * Order.*(..)) ||
+		//call(public * Orders.*(..)) ||
+		//call(public * *.set*(..)) ||
+		//call(public * *.add*(..));
 	
 	
 	Object around(): trace() {

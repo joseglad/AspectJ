@@ -47,13 +47,18 @@ Par conséquent, s'il n'y a pas une première instance de la classe dans la Hash
 Ce diagramme affiche les appels et les retours d'appels de méthodes entre les objets de l'application durant son exécution. Il permet d'observer le déroulement de l'application.
 
 Pour générer ce diagramme, j'ai tout d'abord créé une coupe qui accepte toutes les méthodes publiques du package exercice2.etape1.
+A chaque appel à une méthode, je récupère la source, la cible, la méthode et le type de retour de la méthode.
 
+Pour avoir un affichage correct, j'ai ajouté deux méthodes privées. Une méthode giveACorrectsize qui ajuste à une taille donnée une chaîne de caractères avec un caractère répété. Et une méthode checkAddition qui ajoute un objet à la HashMap s'il n'y est pas contenu. Elle fournit aussi un rang aux différents objets pour savoir où commencer le tracé de la flèche d'appel et l'arrêter (inversement pour la flèche de retour).
 
+Grâce à la méthode giveACorrectsize, je peux nommer la flèche d'appel avec le nom de la méthode et la flèche de retour avec le nom de l'object retourné. Pour obtenir ces deux flèches, il faut afficher la flèche d'appel avant le proceed() et juste après la flèche de retour. Les noms des différens acteurs de ce diagramme sont affichés tous les cinq appels de méthodes.
+
+On peut modifier la taille du diagramme, en paramétrant les attributs de l'aspect Diagram.
 
 ## VI - Exécution de l'application
 
 Deux exécutables.
 
 Depuis une console, se placer à la racine du projet et lancer la commande:
-> ./diagram
+> java -jar diagram.jar
 

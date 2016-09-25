@@ -7,6 +7,10 @@ import org.aspectj.lang.reflect.MethodSignature;
 
 
 public aspect Diagram {
+	//Pour garder les objets en mémoire et savoir qui appelle qui
+	//Garder la Source et la Cible en mémoire
+	//un Integer pour connaitre la distance entre les != objets
+	//Faire un traceur de diagramme qui prend appuie sur le rang
 	private Map<Object, Integer> actors		= new HashMap<Object, Integer>();
 	private int rank						= -1;
 	private final String blanks				= "                ";
@@ -45,7 +49,16 @@ public aspect Diagram {
 	}
 	
 	
+	
+	//Attention on peut avoir le nom de la méthode via sa signature
 	pointcut trace():
+		/*
+		call(public * exercice2.etape1.*.has*(..)) ||
+		call(public * exercice2.etape1.*.del*(..)) ||
+		call(public * exercice2.etape1.*.set*(..)) ||
+		call(public * exercice2.etape1.*.add*(..)) ||
+		call(public * exercice2.etape1.*.get*(..));
+		*/
 		call(public * exercice2.etape1.*.*(..));
 	
 	

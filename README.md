@@ -46,6 +46,10 @@ Par conséquent, s'il n'y a pas une première instance de la classe dans la Hash
 
 Ce diagramme affiche les appels et les retours d'appels de méthodes entre les objets de l'application durant son exécution. Il permet d'observer le déroulement de l'application.
 
+Pour générer ce diagramme, j'ai tout d'abord créé une coupe qui accepte toutes les méthodes publiques du package exercice2.etape1.
+
+
+
 ## VI - Exécution de l'application
 
 Deux exécutables.

@@ -34,9 +34,11 @@ Ces deux contraintes rendent utiles la refactorisation de code.
 
 Nous allons implémenter ce design pattern Singleton grâce à AspectJ.
 
-Pour cela, il faut tout d'abord que la classe qui souhaite avoir les caractéristiques d'un Singleton implémente notre interface Singleton. Cette interface nous servira de filtre.
+Pour cela, il faut tout d'abord que la classe qui souhaite avoir les caractéristiques d'un Singleton implémente notre interface Singleton. Cette interface nous sert simplement de filtre. En effet, dans la coupe on utilise l'opérateur + qui accepte n'importe quel sous-type de l'interface Singleton.
 
-Par la suite, pour le premier appel pour l'instanciation de cette classe, un objet sera créé et stocké dans l'aspect. Pour les appels suivants de cette même classe, c'est l'objet stocké qui sera retourné.
+Par la suite, pour le premier appel pour l'instanciation de cette classe, un objet sera créé et stocké dans l'aspect, plus précisément dans une HashMap. 
+
+Pour les appels suivants à cette même classe, c'est l'objet stocké qui sera retourné. Cela est possible grâce à la HashMap qui utilise la classe comme clef et l'instance de cette classe comme valeur. Ce qui est intéressant est qu'en vérifiant avec la classe comme clef s'il y a une instance de cette classe permet de vérifier si une première instance de la classe a déjà été créée ou non. Si c'est le cas, on n'en crée pas un autre.
 
 ## V - Diagramme d'échange de messages
 
@@ -48,4 +50,4 @@ Deux exécutables.
 
 Depuis une console, se placer à la racine du projet et lancer la commande:
 > ./diagram
-- 
+

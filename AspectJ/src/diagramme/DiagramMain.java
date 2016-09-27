@@ -23,10 +23,10 @@ public class DiagramMain {
 		orders.addOrder(order1);
 		orders.addOrder(order2);
 		
-		hedi.addOrder(orders.getOrders(0));
+		clients.getClient(1).addOrder(orders.getOrders(0));
 		
 		try {
-			clients.delClient(hedi);
+			clients.delClient(clients.getClient(1));
 		} catch(ClientHasOrderException e) {
 			//System.out.println("Main: L'exception ClientHasOrderException a été levée");
 		}
@@ -35,7 +35,7 @@ public class DiagramMain {
 		hedi.delOrder(orders.getOrders(0));
 		
 		try {
-			clients.delClient(hedi);
+			clients.delClient(clients.getClient(1));
 			//System.out.println("Main: La suppression de Hedi dans la liste de clients a été faite avec succès");
 		} catch(ClientHasOrderException e) {
 			//System.out.println("Main: L'exception ClientHasOrderException a été levée");

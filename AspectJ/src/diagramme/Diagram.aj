@@ -9,8 +9,8 @@ import org.aspectj.lang.reflect.MethodSignature;
 public aspect Diagram {
 	private Map<Object, Integer> actors		= new HashMap<Object, Integer>();
 	private int rank						= -1;
-	private final String blanks				= "                ";
-	private final String dashes				= "----------------";
+	private final String blanks				= "                                ";
+	private final String dashes				= "--------------------------------";
 	private final int size					= this.blanks.length();
 	private String names					= "";
 	private int callCounter					= 0;

@@ -57,6 +57,7 @@ On peut modifier la taille du diagramme, en paramétrant les attributs de l'aspe
 
 ## VI - Exécution de l'application
 
-Depuis une console, se placer à la racine du projet et lancer la commande:
-> java -jar diagram.jar
+Pour lancer l'application, il faut lancer le projet AspectJ depuis Eclipse.
+Une fois le projet ouvert, il faut ouvrir le fichier DiagramMain dans le package diagramme.
+Enfin, il faut cliquer sur le bouton Run pour lancer l'application.
 
